@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Memory Card Game</h1>
+            <div class="stats-container">
+                <div class="stat">
+                    <p>Time: <span id="time">00:00</span></p>
+                </div>
+                <div class="stat">
+                    <p>Moves: <span id="moves">0</span></p>
+                </div>
+                <div class="stat">
+                    <p>Matches: <span id="matches">0</span>/<span id="total-pairs">8</span></p>
+                </div>
+            </div>
+            <button id="restart-btn">Restart Game</button>
+        </header>
+
+        <div id="game-complete" class="hidden">
+            <h2>Congratulations! 🎉</h2>
+            <p>You completed the game in <span id="final-moves">0</span> moves and <span id="final-time">00:00</span>!</p>
+        </div>
+
+        <div id="game-board"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
